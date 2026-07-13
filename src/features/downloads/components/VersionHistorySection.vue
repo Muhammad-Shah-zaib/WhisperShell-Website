@@ -37,8 +37,7 @@ import versions from '@/core/data/versions.json'
               <td class="py-6 px-6 font-sans text-sm text-on-surface-variant">{{ item.date }}</td>
               <td class="py-6 px-6 font-mono text-sm text-on-surface-variant font-medium">{{ item.size }}</td>
               <td class="py-6 px-6 text-right">
-                <div class="flex items-center justify-end space-x-6">
-                  <a :href="item.changelogUrl" class="font-sans text-sm text-on-surface-variant hover:text-on-background underline underline-offset-2 transition-colors">Changelog</a>
+                <div class="flex items-center justify-end">
                   <a :href="item.downloadUrl" class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-surface-container-high text-on-surface-variant hover:text-primary hover:border-primary transition-colors">
                     <Icon icon="mdi:download" class="w-5 h-5" />
                   </a>
