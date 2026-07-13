@@ -30,7 +30,7 @@ import BaseCodeBlock from '@/core/components/BaseCodeBlock.vue'
         <!-- Step 1 -->
         <div>
           <h3 class="font-sans text-xl sm:text-2xl font-bold text-on-background mb-4">1. Enable Copr Repository</h3>
-          <BaseCodeBlock code="sudo dnf copr enable whispershell/enable" />
+          <BaseCodeBlock code="sudo dnf copr enable muhammad-shah-zaib/whispershell" />
         </div>
 
         <!-- Step 2 -->
