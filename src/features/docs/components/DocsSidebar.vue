@@ -1,14 +1,15 @@
 <script setup>
 import { Icon } from '@iconify/vue'
 import { useRoute } from 'vue-router'
+import BaseBadge from '@/core/components/BaseBadge.vue'
 
 const route = useRoute()
-
+// ... (rest of script config remains)
 const navItems = [
   { name: 'Getting Started', path: '/docs/getting-started', icon: 'mdi:rocket-launch-outline' },
-  { name: 'Download', path: '/docs/download', icon: 'mdi:download-outline' },
+  { name: 'COPR Repository', path: '/docs/copr-support', icon: 'mdi:download-outline' },
   { name: 'Model Config', path: '/docs/model-config', icon: 'mdi:chip' },
-  { name: 'Custom Models', path: '/docs/custom-models', icon: 'mdi:tune' },
+  { name: 'Custom Models', path: '/docs/custom-models', icon: 'mdi:tune', badge: 'Soon' },
   { name: 'Hotkeys', path: '/docs/hotkeys', icon: 'mdi:keyboard-outline' },
   { name: 'Troubleshooting', path: '/docs/troubleshooting', icon: 'mdi:wrench-outline' }
 ]
@@ -29,11 +30,21 @@ const navItems = [
         v-for="item in navItems"
         :key="item.name"
         :to="item.path"
-        class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors font-sans text-sm font-medium"
+        class="flex items-center justify-between px-4 py-3 rounded-lg transition-colors font-sans text-sm font-medium w-full"
         :class="route.path === item.path ? 'bg-surface-container-high text-primary' : 'text-on-surface-variant hover:bg-surface-container hover:text-on-background'"
       >
-        <Icon :icon="item.icon" class="w-5 h-5" />
-        <span>{{ item.name }}</span>
+        <div class="flex items-center space-x-3">
+          <Icon :icon="item.icon" class="w-5 h-5" />
+          <span>{{ item.name }}</span>
+        </div>
+        <BaseBadge 
+          v-if="item.badge"
+          variant="neutral"
+          mono
+          class="scale-90"
+        >
+          {{ item.badge }}
+        </BaseBadge>
       </router-link>
     </nav>
   </aside>

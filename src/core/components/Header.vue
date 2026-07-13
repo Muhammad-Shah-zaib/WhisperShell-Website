@@ -6,7 +6,6 @@ import { APP_NAME } from '@/core/constants'
 const route = useRoute()
 
 const navLinks = [
-  { name: 'Home', path: '/' },
   { name: 'Downloads', path: '/downloads' },
   { name: 'Docs', path: '/docs' }
 ]

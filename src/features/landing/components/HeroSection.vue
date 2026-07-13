@@ -8,7 +8,7 @@ import BaseButton from '@/core/components/BaseButton.vue'
     <!-- Badge -->
     <div class="mb-8">
       <span class="inline-flex items-center px-3 py-1 rounded-full border border-surface-container-highest bg-surface-container-lowest text-on-surface-variant font-mono text-[10px] sm:text-xs font-bold tracking-widest uppercase">
-        Fedora 44 Ready &bull; Wayland Optimized
+        RPM Based &bull; Wayland Optimized
       </span>
     </div>
 
@@ -18,10 +18,7 @@ import BaseButton from '@/core/components/BaseButton.vue'
     </h1>
     <div class="max-w-2xl mx-auto mb-10">
       <p class="font-sans text-lg sm:text-xl text-on-surface-variant mb-2">
-        A secure, offline voice-to-text tool built for Wayland and Fedora 44.
-      </p>
-      <p class="font-sans text-xs text-outline-variant">
-        Note: Built specifically for Wayland. Legacy X11 environments are not supported.
+        A secure, offline voice-to-text tool built for Wayland and modern RPM-based Linux distributions.
       </p>
     </div>
 
@@ -30,7 +27,7 @@ import BaseButton from '@/core/components/BaseButton.vue'
       <BaseButton to="/downloads" variant="primary" class="w-full sm:w-auto min-w-[160px]">
         Get the RPM
       </BaseButton>
-      <BaseButton href="#" variant="ghost" class="w-full sm:w-auto min-w-[160px]">
+      <BaseButton to="/docs/getting-started" variant="ghost" class="w-full sm:w-auto min-w-[160px]">
         Read Docs
       </BaseButton>
     </div>
@@ -47,11 +44,10 @@ import BaseButton from '@/core/components/BaseButton.vue'
       </div>
       <!-- Terminal Body -->
       <div class="p-6 font-mono text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-        <div><span class="text-primary">user@fedora:~$</span> whispershell --listen</div>
-        <div>Initializing model [base.en]... <span class="text-on-background">Done.</span></div>
-        <div>Wayland compositor detected. Sandboxing active.</div>
-        <div>X11 check: Not detected. <span class="text-error">Wayland optimization enabled.</span></div>
-        <div class="mt-4 text-on-background font-bold">&gt; Dictating directly to active window...<span class="animate-pulse">_</span></div>
+        <div><span class="text-primary">user@linux:~$</span> whispershell --toggle-recording</div>
+        <div class="opacity-75">[WhisperShell] 🔧 Wayland detected — forcing GDK_BACKEND=x11 (XWayland) for global hotkey support</div>
+        <div class="opacity-75">[WhisperShell] An instance is already running. Triggered the existing instance.</div>
+        <div class="mt-4 text-on-background font-bold">&gt; Dictating directly to active window...<span class="animate-pulse">█</span></div>
       </div>
     </div>
 

@@ -121,7 +121,7 @@ onUnmounted(() => {
 
       <div class="text-lg sm:text-xl font-sans text-on-surface-variant leading-relaxed pointer-events-auto text-justify">
         <p>
-          Prompting is incredibly important, but typing breaks your flow. Fleeting thoughts often vanish before the sentence is finished. While there are open-source dictation tools out there, they suffer from severe stability issues, clipping text, and silent crashes on modern Wayland systems. This forces constant terminal restarts. Other reliable options are walled off behind paid subscriptions. We built <span class="uppercase text-primary">{{ APP_NAME }}</span> as a free, strictly Wayland-native tool to guarantee secure, frictionless voice-to-text without the legacy workarounds.
+          Prompting is very important, but typing can break your flow. Sometimes you forget small details before you finish a sentence. There are open-source dictation tools, but they often crash, miss text, or have stability issues on Wayland. Fixing them requires constantly restarting from the terminal. Other good tools require paid subscriptions. That is why we built <span class="uppercase text-primary">{{ APP_NAME }}</span>. It is a free, simple voice to text dictation tool for Wayland distros, giving you a smooth and secure experience.
         </p>
       </div>
     </div>

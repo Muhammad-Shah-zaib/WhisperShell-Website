@@ -1,23 +1,6 @@
 <script setup>
 import { Icon } from '@iconify/vue'
-
-const features = [
-  {
-    icon: 'mdi:shield-outline',
-    title: 'Wayland Security',
-    description: 'Works securely within the strict sandbox constraints of modern Linux distributions. No X11 workarounds needed.'
-  },
-  {
-    icon: 'mdi:server-outline',
-    title: 'Offline Models',
-    description: 'Your voice data never leaves your machine. Powered by highly optimized, locally-run inference models.'
-  },
-  {
-    icon: 'mdi:keyboard-outline',
-    title: 'Global Hotkeys',
-    description: 'Configurable system-wide shortcuts summon a minimalist overlay for instant dictation in any application.'
-  }
-]
+import { features } from '@/core/data/features.js'
 </script>
 
 <template>

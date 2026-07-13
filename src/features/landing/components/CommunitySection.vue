@@ -16,7 +16,7 @@ import { APP_NAME } from '@/core/constants'
         Open Source &amp; Community Driven
       </h2>
       <p class="font-sans text-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
-        {{ APP_NAME }} is built by the community for the community. Check out our source code, contribute, or just say hi on GitHub.
+        If you want to collaborate to keep {{ APP_NAME }} alive, active, and help scale it to other Linux distributions, you are more than welcome to contribute on GitHub.
       </p>
 
       <BaseButton href="https://github.com/Muhammad-Shah-zaib/WhisperShell" target="_blank" variant="secondary" class="!bg-on-background !text-background hover:opacity-90 transition-opacity">

@@ -12,8 +12,8 @@ import { APP_NAME } from '@/core/constants'
         <h2 class="font-heading text-3xl font-bold text-on-background mb-4">
           NVIDIA Driver Requirements
         </h2>
-        <p class="font-sans text-lg text-on-surface-variant max-w-3xl leading-relaxed">
-          {{ APP_NAME }} leverages GPU acceleration for high-speed offline transcription. Ensure you have the proper NVIDIA proprietary drivers installed. You can verify your driver installation and GPU usage by running the <code class="bg-surface-container px-2 py-1 rounded text-primary font-mono text-sm">nvidia-smi</code> command.
+        <p class="font-sans text-lg text-on-surface-variant max-w-4xl leading-relaxed">
+          {{ APP_NAME }} automatically detects and utilizes your NVIDIA GPU for high-speed offline transcription. If no supported GPU is found, it will fall back to CPU-only execution. To enable GPU acceleration, verify your proprietary NVIDIA drivers are installed and functioning by running the <code class="bg-surface-container px-2 py-1 rounded text-primary font-mono text-sm">nvidia-smi</code> command.
         </p>
       </div>
 
@@ -25,11 +25,11 @@ import { APP_NAME } from '@/core/constants'
             <div class="w-3 h-3 rounded-full bg-tertiary"></div>
             <div class="w-3 h-3 rounded-full bg-primary-container"></div>
           </div>
-          <span class="ml-4 font-mono text-xs text-on-surface-variant uppercase tracking-wider">user@fedora:~</span>
+          <span class="ml-4 font-mono text-xs text-on-surface-variant uppercase tracking-wider">user@linux:~</span>
         </div>
         <div class="p-6 overflow-x-auto">
           <pre class="font-mono text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-<span class="text-primary">user@fedora:~$</span> nvidia-smi
+<span class="text-primary">user@linux:~$</span> nvidia-smi
 Mon Jul 13 16:54:47 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.80                 Driver Version: 595.80         CUDA Version: 13.2     |

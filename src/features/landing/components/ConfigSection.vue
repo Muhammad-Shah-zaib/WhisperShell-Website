@@ -43,19 +43,15 @@ import { APP_NAME } from '@/core/constants'
         <div class="w-full bg-surface-container-lowest border border-surface-container-highest rounded-xl overflow-hidden shadow-2xl">
           <div class="flex items-center px-4 py-3 bg-surface-container border-b border-surface-container-highest">
             <Icon icon="mdi:cog-outline" class="w-4 h-4 text-on-surface-variant mr-2" />
-            <span class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">config.yaml</span>
+            <span class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">config.json</span>
           </div>
           <div class="p-6 overflow-x-auto">
             <pre class="font-mono text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-<span class="text-primary">model:</span>
-  type: <span class="text-tertiary">"base.en"</span>
-  path: <span class="text-tertiary">"~/.cache/whispershell/models/"</span>
-
-<span class="text-primary">hotkeys:</span>
-  toggle_listen: <span class="text-tertiary">"Super+Shift+O"</span>
-
-<span class="text-primary">wayland:</span>
-  input_method: <span class="text-tertiary">"virtual_keyboard_v1"</span></pre>
+{
+  <span class="text-primary">"model"</span>: <span class="text-tertiary">"base"</span>,
+  <span class="text-primary">"history_limit"</span>: <span class="text-tertiary">"5"</span>,
+  <span class="text-primary">"voice_recordings_dir"</span>: <span class="text-tertiary">"~/.local/share/whispershell/recordings"</span>
+}</pre>
           </div>
         </div>
 

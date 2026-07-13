@@ -31,9 +31,9 @@ const router = createRouter({
               component: () => import('@/features/docs/views/DocsGettingStarted.vue')
             },
             {
-              path: 'download',
-              name: 'docs-download',
-              component: () => import('@/features/docs/views/DocsDownload.vue')
+              path: 'copr-support',
+              name: 'docs-copr-support',
+              component: () => import('@/features/docs/views/DocsCoprSupport.vue')
             },
             {
               path: 'model-config',
@@ -59,7 +59,14 @@ const router = createRouter({
         }
       ]
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0, behavior: 'smooth' }
+    }
+  }
 })
 
 export default router

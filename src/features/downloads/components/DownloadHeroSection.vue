@@ -14,13 +14,13 @@ import { APP_NAME } from '@/core/constants'
         <div class="mb-6">
           <span class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-surface-container-high bg-surface-container font-mono text-xs text-on-surface-variant uppercase tracking-widest">
             <Icon icon="mdi:check-circle-outline" class="w-4 h-4" />
-            <span>v1.2.0-STABLE | FEDORA 39+</span>
+            <span>v1.2.0-STABLE | RPM-BASED &amp; WAYLAND</span>
           </span>
         </div>
 
         <!-- Headline -->
         <h1 class="font-heading text-4xl sm:text-5xl font-extrabold text-on-background tracking-tight mb-6 leading-tight">
-          Download {{ APP_NAME }} for Linux
+          Download <span class="text-primary">{{ APP_NAME.toUpperCase() }}</span> for Linux
         </h1>
         
         <!-- Description -->
@@ -68,7 +68,7 @@ import { APP_NAME } from '@/core/constants'
               </code>
             </div>
             <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
-              Requires Fedora 39 or newer. Root privileges required for system-wide installation.
+              Requires an RPM-based Linux distribution using Wayland.
             </p>
           </div>
         </div>
