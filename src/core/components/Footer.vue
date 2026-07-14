@@ -32,20 +32,20 @@ import { APP_NAME } from '@/core/constants'
           <ul class="space-y-3">
             <li>
               <a href="https://github.com/Muhammad-Shah-zaib/WhisperShell" target="_blank" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2">
-                <Icon icon="mdi:github" class="w-4 h-4" />
                 <span>GitHub</span>
+                <Icon icon="mdi:open-in-new" class="w-4 h-4" />
               </a>
             </li>
             <li>
               <a href="https://muhammadshahzaib.tech/" target="_blank" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2">
-                <Icon icon="mdi:earth" class="w-4 h-4" />
                 <span>Developer Portfolio</span>
+                <Icon icon="mdi:open-in-new" class="w-4 h-4" />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/muhammad-shahzaib-311724292" target="_blank" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2">
-                <Icon icon="mdi:linkedin" class="w-4 h-4" />
                 <span>LinkedIn</span>
+                <Icon icon="mdi:open-in-new" class="w-4 h-4" />
               </a>
             </li>
           </ul>

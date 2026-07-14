@@ -38,7 +38,7 @@ const navLinks = [
 
       <!-- CTA -->
       <div class="flex items-center space-x-4">
-        <BaseButton to="/docs/getting-started" variant="primary" class="!px-4 !py-2 text-xs">
+        <BaseButton v-if="!route.path.startsWith('/docs')" to="/docs/getting-started" variant="primary" class="!px-4 !py-2 text-xs">
           Get Started
         </BaseButton>
       </div>
