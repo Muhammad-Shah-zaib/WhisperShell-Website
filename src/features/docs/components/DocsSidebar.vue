@@ -19,7 +19,7 @@ const navItems = [
   <aside class="w-full md:w-64 flex-shrink-0 md:border-r border-surface-container-high bg-background p-6">
     <div class="mb-8">
       <h2 class="font-heading text-xl font-bold text-on-background mb-2">Documentation</h2>
-      <p class="font-mono text-[10px] text-primary uppercase tracking-widest font-bold mb-2">v1.2.0-STABLE</p>
+      <p class="font-mono text-[10px] text-primary uppercase tracking-widest font-bold mb-2">v0.1.0-BETA</p>
       <p class="font-sans text-xs text-on-surface-variant italic leading-relaxed">
         Optimized for Wayland. May not function as expected on legacy X11 desktops.
       </p>

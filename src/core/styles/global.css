@@ -44,4 +44,31 @@
   body {
     @apply bg-background text-on-background;
   }
+
+  ::selection {
+    background-color: rgba(210, 188, 251, 0.198);
+  }
+
+  /* Custom scrollbar for the entire website */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-surface-container-high);
+    border: 2px solid var(--color-background);
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-surface-bright);
+  }
+
+  /* Firefox compatibility */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-surface-container-high) var(--color-background);
+  }
 }

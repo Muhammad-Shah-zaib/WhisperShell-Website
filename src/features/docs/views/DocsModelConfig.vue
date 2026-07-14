@@ -19,7 +19,6 @@ import BaseCallout from '@/core/components/BaseCallout.vue'
 
     <div class="mb-10">
       <div class="flex items-center space-x-3 mb-6">
-        <Icon icon="mdi:microphone-outline" class="w-6 h-6 text-primary" />
         <h2 class="font-heading text-3xl sm:text-4xl font-bold text-on-background">Model Configuration</h2>
       </div>
       

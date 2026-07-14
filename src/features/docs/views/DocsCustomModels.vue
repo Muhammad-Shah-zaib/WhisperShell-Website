@@ -1,28 +1,19 @@
 <script setup>
 import { APP_NAME } from '@/core/constants'
 import BaseBadge from '@/core/components/BaseBadge.vue'
+import BaseTerminal from '@/core/components/BaseTerminal.vue'
 </script>
 
 <template>
   <div class="flex-grow flex flex-col items-center justify-center max-w-2xl mx-auto w-full px-4 py-8">
     
-    <!-- Terminal Window Container -->
-    <div class="w-full bg-[#0e0e0e] border border-surface-container-high rounded-xl overflow-hidden shadow-2xl mb-8">
-      
-      <!-- Terminal Header / Titlebar -->
-      <div class="flex items-center justify-between px-4 py-3 bg-surface-container border-b border-surface-container-high">
-        <!-- Window Controls -->
-        <div class="flex space-x-2">
-          <div class="w-3 h-3 rounded-full bg-error/40"></div>
-          <div class="w-3 h-3 rounded-full bg-tertiary/40"></div>
-          <div class="w-3 h-3 rounded-full bg-primary/40"></div>
-        </div>
-        <!-- Monospace Badge in Top Right -->
-        <BaseBadge variant="tertiary" mono>In-Development</BaseBadge>
-      </div>
+    <!-- Terminal Window -->
+    <BaseTerminal title="custom-model-config" class="w-full mb-8">
+      <template #header-right>
+        <BaseBadge variant="tertiary" mono class="mr-2">In-Development</BaseBadge>
+      </template>
 
-      <!-- Terminal Body / Content -->
-      <div class="p-6 overflow-x-auto">
+      <div class="overflow-x-auto">
         <pre class="font-mono text-xs sm:text-sm text-on-surface-variant leading-relaxed">
 <span class="text-outline-variant">// Configure your custom local weights</span>
 {
@@ -36,8 +27,7 @@ import BaseBadge from '@/core/components/BaseBadge.vue'
 <span class="text-on-surface-variant opacity-70">[INFO] Loading custom GGUF weights into GPU memory...</span>
 <span class="text-primary animate-pulse">█</span></pre>
       </div>
-
-    </div>
+    </BaseTerminal>
 
     <!-- Explanation Title & Paragraph below card -->
     <div class="text-center max-w-md">

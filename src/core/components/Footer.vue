@@ -14,19 +14,11 @@ import { APP_NAME } from '@/core/constants'
           <p class="text-sm font-sans text-on-surface-variant max-w-sm mb-6">
             Secure, offline voice-to-text for the modern Linux desktop.
           </p>
-          <div class="flex items-center space-x-4 text-on-surface-variant">
-            <a href="https://muhammadshahzaib.tech/" target="_blank" class="hover:text-primary transition-colors">
-              <Icon icon="mdi:earth" class="w-5 h-5" />
-            </a>
-            <a href="https://github.com/Muhammad-Shah-zaib/WhisperShell" target="_blank" class="hover:text-primary transition-colors">
-              <Icon icon="mdi:code-tags" class="w-5 h-5" />
-            </a>
-          </div>
         </div>
 
         <!-- Product Links -->
         <div>
-          <h3 class="font-mono text-xs font-bold text-on-surface uppercase tracking-wider mb-4">Product</h3>
+          <h3 class="font-mono text-xs font-bold text-on-surface uppercase tracking-wider mb-4">Navigation</h3>
           <ul class="space-y-3">
             <li><router-link to="/" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors">Home</router-link></li>
             <li><router-link to="/downloads" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors">Downloads</router-link></li>
@@ -38,9 +30,24 @@ import { APP_NAME } from '@/core/constants'
         <div>
           <h3 class="font-mono text-xs font-bold text-on-surface uppercase tracking-wider mb-4">Social / Dev</h3>
           <ul class="space-y-3">
-            <li><a href="https://github.com/Muhammad-Shah-zaib/WhisperShell" target="_blank" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors">GitHub</a></li>
-            <li><a href="https://muhammadshahzaib.tech/" target="_blank" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors">Developer Portfolio</a></li>
-            <li><a href="https://www.linkedin.com/in/muhammad-shahzaib-311724292" target="_blank" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors">LinkedIn</a></li>
+            <li>
+              <a href="https://github.com/Muhammad-Shah-zaib/WhisperShell" target="_blank" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2">
+                <Icon icon="mdi:github" class="w-4 h-4" />
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://muhammadshahzaib.tech/" target="_blank" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2">
+                <Icon icon="mdi:earth" class="w-4 h-4" />
+                <span>Developer Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/muhammad-shahzaib-311724292" target="_blank" class="text-sm font-sans text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2">
+                <Icon icon="mdi:linkedin" class="w-4 h-4" />
+                <span>LinkedIn</span>
+              </a>
+            </li>
           </ul>
         </div>
 

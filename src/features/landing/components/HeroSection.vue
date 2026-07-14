@@ -1,5 +1,6 @@
 <script setup>
 import BaseButton from '@/core/components/BaseButton.vue'
+import BaseTerminal from '@/core/components/BaseTerminal.vue'
 </script>
 
 <template>
@@ -33,23 +34,14 @@ import BaseButton from '@/core/components/BaseButton.vue'
     </div>
 
     <!-- Terminal Mockup -->
-    <div class="w-full max-w-3xl mx-auto bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-container-high shadow-2xl text-left">
-      <!-- Terminal Header -->
-      <div class="flex items-center px-4 py-3 bg-surface-container border-b border-surface-container-highest">
-        <div class="flex space-x-2">
-          <div class="w-3 h-3 rounded-full bg-error"></div>
-          <div class="w-3 h-3 rounded-full bg-tertiary"></div>
-          <div class="w-3 h-3 rounded-full bg-primary-container"></div>
-        </div>
-      </div>
-      <!-- Terminal Body -->
-      <div class="p-6 font-mono text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+    <BaseTerminal title="Terminal" class="w-full max-w-3xl mx-auto text-left">
+      <div class="font-mono text-xs sm:text-sm text-on-surface-variant leading-relaxed">
         <div><span class="text-primary">user@linux:~$</span> whispershell --toggle-recording</div>
         <div class="opacity-75">[WhisperShell] 🔧 Wayland detected — forcing GDK_BACKEND=x11 (XWayland) for global hotkey support</div>
         <div class="opacity-75">[WhisperShell] An instance is already running. Triggered the existing instance.</div>
         <div class="mt-4 text-on-background font-bold">&gt; Dictating directly to active window...<span class="animate-pulse">█</span></div>
       </div>
-    </div>
+    </BaseTerminal>
 
   </section>
 </template>

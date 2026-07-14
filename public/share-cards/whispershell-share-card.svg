@@ -1,0 +1,27 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glyph" gradientUnits="userSpaceOnUse" x1="157" y1="256" x2="354" y2="256">
+      <stop offset="0%"  stop-color="#CBA6F7"/>
+      <stop offset="50%" stop-color="#B4BEFE"/>
+      <stop offset="100%" stop-color="#89B4FA"/>
+    </linearGradient>
+
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="630" fill="#000000"/>
+
+  <g transform="translate(120,185) scale(0.47)">
+    <rect x="0" y="0" width="512" height="512" rx="110" ry="110" fill="#0c0c10"/>
+    <rect x="1.5" y="1.5" width="509" height="509" rx="108.5" ry="108.5" fill="none" stroke="#2a2a33" stroke-width="2" stroke-opacity="0.6"/>
+    <g fill="none" stroke="url(#glyph)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M174,190 L248,256 L174,322" stroke-width="34"/>
+      <path d="M296.1,222.6 A45,45 0 0,1 296.1,289.4"   stroke-width="28"/>
+      <path d="M319.5,196.6 A80,80 0 0,1 319.5,315.4"   stroke-width="24"/>
+      <path d="M342.9,170.6 A115,115 0 0,1 342.9,341.4" stroke-width="20"/>
+    </g>
+  </g>
+
+  <text x="380" y="300" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="600" letter-spacing="2" fill="#B4BEFE">WHISPERSHELL</text>
+
+  <text x="382" y="348" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#a6adc8">Offline voice-to-text dictation for Wayland on RPM-based Linux</text>
+</svg>

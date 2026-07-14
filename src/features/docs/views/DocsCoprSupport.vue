@@ -17,7 +17,6 @@ import BaseCodeBlock from '@/core/components/BaseCodeBlock.vue'
 
     <div class="mb-10">
       <div class="flex items-center space-x-3 mb-6">
-        <Icon icon="mdi:git" class="w-6 h-6 text-primary" />
         <h2 class="font-heading text-3xl sm:text-4xl font-bold text-on-background">Repository Setup</h2>
       </div>
       

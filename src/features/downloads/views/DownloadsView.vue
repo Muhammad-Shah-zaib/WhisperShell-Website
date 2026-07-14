@@ -1,8 +1,10 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import DownloadHeroSection from '../components/DownloadHeroSection.vue'
 import VersionHistorySection from '../components/VersionHistorySection.vue'
 import NvidiaDriverSection from '../components/NvidiaDriverSection.vue'
+
+const activeTab = ref('Copr Repository')
 
 onMounted(() => {
   if (localStorage.getItem('whispershell_downloads_confetti_fired')) {
@@ -98,8 +100,38 @@ function launchConfetti() {
 
 <template>
   <div>
-    <DownloadHeroSection />
-    <VersionHistorySection />
+    <DownloadHeroSection :activeTab="activeTab" @update:activeTab="activeTab = $event" />
+    
+    <div class="version-history-transition" :class="{ 'collapsed': activeTab !== 'Manual Install' }">
+      <div class="transition-inner">
+        <VersionHistorySection />
+      </div>
+    </div>
+
     <NvidiaDriverSection />
   </div>
 </template>
+
+<style scoped>
+.version-history-transition {
+  display: grid;
+  grid-template-rows: 1fr;
+  opacity: 1;
+  filter: blur(0px);
+  transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.version-history-transition.collapsed {
+  grid-template-rows: 0fr;
+  opacity: 0;
+  filter: blur(12px);
+  pointer-events: none;
+}
+
+.transition-inner {
+  min-height: 0;
+}
+</style>
