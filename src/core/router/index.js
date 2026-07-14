@@ -64,6 +64,12 @@ const router = createRouter({
               meta: { title: 'Troubleshooting - WhisperShell Docs', description: 'Troubleshoot issues with WhisperShell on Wayland.', keywords: 'whispershell troubleshooting, fix whispershell, wayland issues' }
             }
           ]
+        },
+        {
+          path: '/:pathMatch(.*)*',
+          name: 'not-found',
+          component: () => import('@/features/landing/views/NotFoundView.vue'),
+          meta: { title: '404 - Page Not Found', description: 'The requested page could not be found.', keywords: '404, not found' }
         }
       ]
     }
